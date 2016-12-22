@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Currency Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Currency Calculator</h1>
+  <div class="exchange-calc">
+    <form id="calc">
+      <label for="amount"></label>
+      <input type="text" id="amount" name="amount" />
+      <select name="currencies" id="currencies" class="currencies">
+        <option value="PLN">PLN</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="CHF">CHF</option>
+        <option value="NOK">NOK</option>
+      </select>
+    </form>
+    <p class="alert-info">Wrong input</p>
+    <table class="exchange" id="exchange"></table>
+  </div>
+  <!-- /.exchange-calc -->
+  
+  <script src="jquery-3.1.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

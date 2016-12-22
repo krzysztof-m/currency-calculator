@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+.exchange-calc {
+  max-width: 600px;
+  margin: 30px auto;
+}
+%floated {
+  display: block;
+  float: left;
+}
+#amount {
+  @extend %floated;
+  width: 70%;
+  border: 1px #ccc solid;
+  height: 35px;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  &.alert {
+    &:focus {
+      border: 1px #f00 solid;
+    }
+  }
+}
+.currencies {
+  @extend %floated;
+  width: 30%;
+  height: 35px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+.exchange {
+  width: 100%;
+  border-collapse: collapse;
+  tr {
+    background-color: #eee;
+  }
+  td {
+    width: 33.333%;
+    padding: 5px 10px;
+  }
+}
+.alert-info {
+  display: none;
+}
