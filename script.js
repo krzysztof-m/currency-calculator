@@ -67,32 +67,32 @@ function clear() {
   $amount.val('');
 }
 $.when(
-  $.getJSON("http://api.fixer.io/latest?base=PLN")
+  $.getJSON("https://api.fixer.io/latest?base=PLN")
   .done(function(json) {
     //console.log('success');
     PLNArr = json.rates;
   }),
-  $.getJSON("http://api.fixer.io/latest?base=USD")
+  $.getJSON("https://api.fixer.io/latest?base=USD")
   .done(function(json) {
     //console.log('success');
     USDArr = json.rates;
   }),
-  $.getJSON("http://api.fixer.io/latest?base=EUR")
+  $.getJSON("https://api.fixer.io/latest?base=EUR")
   .done(function(json) {
     //console.log('success');
     EURArr = json.rates;
   }),
-  $.getJSON("http://api.fixer.io/latest?base=CHF")
+  $.getJSON("https://api.fixer.io/latest?base=CHF")
   .done(function(json) {
     //console.log('success');
     CHFArr = json.rates;
   }),
-  $.getJSON("http://api.fixer.io/latest?base=NOK")
+  $.getJSON("https://api.fixer.io/latest?base=NOK")
   .done(function(json) {
     //console.log('success');
     NOKArr = json.rates;
   }),
-  $.getJSON("http://api.fixer.io/latest?base=GBP")
+  $.getJSON("https://api.fixer.io/latest?base=GBP")
   .done(function(json) {
     //console.log('success');
     GBPArr = json.rates;
